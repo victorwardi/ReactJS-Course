@@ -7,7 +7,7 @@ const UserOutput = (props) =>{
 
         <div className="UserOutput">
             <p>Username: {props.userName}</p>
-            <p>Some more text!</p>
+            <button onClick={props.click}>Delete</button>
         </div>
     );
 }
