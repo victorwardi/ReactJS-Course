@@ -79,12 +79,14 @@ class App extends Component {
             )
         }
 
+
         return (
             <div className="App">
                 <button onClick={this.addUserHandler}>add</button>
                 <p>
                     <input type="text" onChange={this.inputChangeHandler} value={this.state.userInput}/>
                 </p>
+                <span>Meu teste!</span>
                 {charList}
                 <Validation inputLength={this.state.userInput.length}/>
                 <UserInput onChange={this.userNameChangedHandler} currentName={this.state.userName}/>
